@@ -14,15 +14,9 @@ public class Chicken : Animal
         Race = "Chicken";
         Age = 2;
         movementSpeed = 1;
+        jumpForce = 200;
     }
 
-    public Chicken()
-    {
-        Name = "Little";
-        Race = "Chicken";
-        Age = 2;
-        movementSpeed = 1;
-    }
 
     // Update is called once per frame
     void Update()

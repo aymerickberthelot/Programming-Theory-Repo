@@ -16,13 +16,6 @@ public class Dog : Animal
         movementSpeed = 5;
     }
 
-    public Dog()
-    {
-        Name = "Little";
-        Race = "Dog";
-        Age = 4;
-        movementSpeed = 5;
-    }
 
     // Update is called once per frame
     void Update()

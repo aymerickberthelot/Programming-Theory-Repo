@@ -65,7 +65,7 @@ public class Animal : PlayerController
         rb = GetComponent<Rigidbody>();
     }
 
-    
+
 
     public override void Move(float movementSpeed) //Abstraction and Polymorphism
     {
@@ -76,4 +76,15 @@ public class Animal : PlayerController
     {
 
     }
+
+
+    void OnMouseDown()
+    {
+        Talk();
+    }
+
+    /*public IEnumerator WaitToTalkAgain(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+    }*/
 }

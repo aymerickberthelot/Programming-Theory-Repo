@@ -10,14 +10,6 @@ public class Cat : Animal
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
 
-        Name = "Little";
-        Race = "Chicken";
-        Age = 2;
-        movementSpeed = 5;
-    }
-
-    public Cat()
-    {
         Name = "Kitty";
         Race = "Cat";
         Age = 2;
@@ -32,7 +24,7 @@ public class Cat : Animal
 
     public override void Talk() //Polymorphism
     {
-        Debug.Log("Hello I'm a " + Name + ", I'm Hello Kitty haha ! I am " + Age + " years old. Meow");
+        Debug.Log("Hello Im " + Name + ", that makes me Hello Kitty haha ! I am " + Age + " years old. Meow");
     }
 
     public override void Move(float cat_movementSpeed) //Polymorphism

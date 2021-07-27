@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using UnityEditor.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,7 +32,8 @@ public class PlayerController : MonoBehaviour
     {
         Move(movementSpeed);  
         if (Input.GetButtonDown("Jump") && Time.time > canJump)
-            Jump();    
+            Jump(); 
+
     }
 
     public void Jump() //Abstraction
@@ -58,4 +62,6 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
 
     }
+
+    
 }

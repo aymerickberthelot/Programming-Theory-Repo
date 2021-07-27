@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using UnityEditor.Events;
 
 public class Lion : Animal
 {
@@ -14,14 +17,7 @@ public class Lion : Animal
         Race = "Lion";
         Age = 20;
         movementSpeed = 12;
-    }
-
-    public Lion()
-    {
-        Name = "Musafa";
-        Race = "Lion";
-        Age = 20;
-        movementSpeed = 12;
+        jumpForce = 400;
     }
 
     // Update is called once per frame
@@ -39,4 +35,6 @@ public class Lion : Animal
     {
         base.Move(movementSpeed);
     }
+
+    
 }
