@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 3;
     public float jumpForce = 300;
     public float timeBeforeNextJump = 1.2f;
-    private float canJump = 0f;
-    Animator anim;
-    Rigidbody rb;
+    public float canJump = 0f;
+    public Animator anim;
+    public Rigidbody rb;
+
+    private Chicken c;
     
     void Start()
     {
@@ -23,7 +25,21 @@ public class PlayerController : MonoBehaviour
         ControllPlayer();
     }
 
-    void ControllPlayer()
+    public void ControllPlayer()
+    {
+        Move(movementSpeed);  
+        if (Input.GetButtonDown("Jump") && Time.time > canJump)
+            Jump();    
+    }
+
+    public void Jump() //Abstraction
+    {
+        rb.AddForce(0, jumpForce, 0);
+        canJump = Time.time + timeBeforeNextJump;
+        anim.SetTrigger("jump");
+    }
+
+    public virtual void Move(float movementSpeed) //Abstraction
     {
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
@@ -35,17 +51,11 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
             anim.SetInteger("Walk", 1);
         }
-        else {
+        else 
             anim.SetInteger("Walk", 0);
-        }
+        
 
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
 
-        if (Input.GetButtonDown("Jump") && Time.time > canJump)
-        {
-                rb.AddForce(0, jumpForce, 0);
-                canJump = Time.time + timeBeforeNextJump;
-                anim.SetTrigger("jump");
-        }
     }
 }
