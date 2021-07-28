@@ -9,11 +9,13 @@ public class Cat : Animal
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        playerAudioSource = GetComponent<AudioSource>();
 
         Name = "Kitty";
         Race = "Cat";
         Age = 2;
         movementSpeed = 5;
+        introduceYourselfText = "Hello Im " + Name + ", that makes me Hello Kitty haha ! \n I am " + Age + " years old. Meow";
     }
 
     // Update is called once per frame
@@ -22,10 +24,6 @@ public class Cat : Animal
         this.ControllPlayer();
     }
 
-    public override void Talk() //Polymorphism
-    {
-        Debug.Log("Hello Im " + Name + ", that makes me Hello Kitty haha ! I am " + Age + " years old. Meow");
-    }
 
     public override void Move(float cat_movementSpeed) //Polymorphism
     {

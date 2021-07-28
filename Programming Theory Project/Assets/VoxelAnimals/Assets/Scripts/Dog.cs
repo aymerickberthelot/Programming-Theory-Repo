@@ -9,11 +9,13 @@ public class Dog : Animal
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        playerAudioSource = GetComponent<AudioSource>();
 
         Name = "Little";
         Race = "Dog";
         Age = 4;
         movementSpeed = 5;
+        introduceYourselfText = ("Woof woof! My name is " + Name + ",\n I'm a dog and I am " + Age + " years old.");
     }
 
 
@@ -21,12 +23,9 @@ public class Dog : Animal
     void Update()
     {
         this.ControllPlayer();
+        
     }
 
-    public override void Talk() //Polymorphism
-    {
-        Debug.Log("Woof woof! My name is " + Name + ", I'm a dog and I am " + Age + " years old.");
-    }
 
     public override void Move(float dog_movementSpeed) //Polymorphism
     {

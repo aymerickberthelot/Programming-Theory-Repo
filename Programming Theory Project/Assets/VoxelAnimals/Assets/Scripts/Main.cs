@@ -10,6 +10,7 @@ public class Main : MonoBehaviour
     {
         animal = SaveAnimalHandler.Instance.animal;
         Instantiate(animal, new Vector3(0f, 0f, -6.5f), new Quaternion(0, 180, 0, 0));
+        
     }
 
     // Update is called once per frame

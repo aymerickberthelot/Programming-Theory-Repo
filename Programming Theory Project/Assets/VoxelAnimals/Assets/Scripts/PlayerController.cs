@@ -15,12 +15,13 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     public Rigidbody rb;
 
-    private Chicken c;
+    public AudioSource playerAudioSource;
     
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        playerAudioSource = GetComponent<AudioSource>();
     }
 
     void Update()

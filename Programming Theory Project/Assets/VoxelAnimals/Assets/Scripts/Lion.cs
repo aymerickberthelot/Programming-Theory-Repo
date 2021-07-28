@@ -12,12 +12,14 @@ public class Lion : Animal
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        playerAudioSource = GetComponent<AudioSource>();
 
         Name = "Musafa";
         Race = "Lion";
         Age = 20;
         movementSpeed = 12;
         jumpForce = 400;
+        introduceYourselfText = "Roarrrrr ! My name is " + Name + ",\n I'm a "+ Age+" years old Lion King";
     }
 
     // Update is called once per frame
@@ -26,10 +28,6 @@ public class Lion : Animal
         this.ControllPlayer();
     }
 
-    public override void Talk() //Polymorphism
-    {
-        Debug.Log("Roarrrrr ! My name is " + Name + ", I'm a "+ Age+" years old Lion King");
-    }
 
     public override void Move(float lion_movementSpeed) //Polymorphism
     {
