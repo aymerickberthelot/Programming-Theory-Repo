@@ -9,7 +9,7 @@ public class MainUIHandler : MonoBehaviour
 
     public void QuitGame()
     {
-        EditorApplication.ExitPlaymode();
+        //EditorApplication.ExitPlaymode();
         Application.Quit();
     }
 
