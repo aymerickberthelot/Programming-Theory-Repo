@@ -17,24 +17,13 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource playerAudioSource;
     
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
-        playerAudioSource = GetComponent<AudioSource>();
-    }
-
-    void Update()
-    {
-        ControllPlayer();
-    }
-
+   
+   
     public void ControllPlayer()
     {
         Move(movementSpeed);  
         if (Input.GetButtonDown("Jump") && Time.time > canJump)
-            Jump(); 
-
+            Jump();
     }
 
     public void Jump() //Abstraction

@@ -11,7 +11,7 @@ public class Dog : Animal
         rb = GetComponent<Rigidbody>();
         playerAudioSource = GetComponent<AudioSource>();
 
-        Name = "Little";
+        Name = "Snoop";
         Race = "Dog";
         Age = 4;
         movementSpeed = 5;
