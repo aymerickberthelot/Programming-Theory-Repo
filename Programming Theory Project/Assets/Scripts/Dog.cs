@@ -15,7 +15,7 @@ public class Dog : Animal
         Race = "Dog";
         Age = 4;
         movementSpeed = 5;
-        introduceYourselfText = ("Woof woof! My name is " + Name + ",\n I'm a dog and I am " + Age + " years old.");
+        IntroduceYourselfText = ("Woof woof! My name is " + Name + ",\n I'm a dog and I am " + Age + " years old.");
     }
 
 

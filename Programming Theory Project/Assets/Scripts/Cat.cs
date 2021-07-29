@@ -15,7 +15,7 @@ public class Cat : Animal
         Race = "Cat";
         Age = 2;
         movementSpeed = 5;
-        introduceYourselfText = "Hello Im " + Name + ", that makes me Hello Kitty haha ! \n I am " + Age + " years old. Meow";
+        IntroduceYourselfText = "Hello Im " + Name + ", that makes me Hello Kitty haha ! \n I am " + Age + " years old. Meow";
     }
 
     // Update is called once per frame

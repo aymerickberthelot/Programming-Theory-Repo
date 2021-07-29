@@ -9,12 +9,10 @@ public class Animal : PlayerController
     private string _name;
     private string race;
     private int age;
-    public string introduceYourselfText;
+    private string introduceYourselfText;
+    
 
     public AudioClip talkSound;
-
-
-    //----------------
     public Transform mouth;
 
 
@@ -34,6 +32,7 @@ public class Animal : PlayerController
         }
 
     }
+
 
     public string Race
     {
@@ -63,6 +62,19 @@ public class Animal : PlayerController
                 Debug.LogError("Age can't be negative.");
             else
                 age = value;
+        }
+
+    }
+
+    public string IntroduceYourselfText
+    {
+        get
+        {
+            return introduceYourselfText;
+        }
+        set
+        {
+            introduceYourselfText = value;
         }
 
     }

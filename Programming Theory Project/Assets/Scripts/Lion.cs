@@ -19,7 +19,7 @@ public class Lion : Animal
         Age = 20;
         movementSpeed = 12;
         jumpForce = 400;
-        introduceYourselfText = "Roarrrrr ! My name is " + Name + ",\n I'm a "+ Age+" years old Lion King";
+        IntroduceYourselfText = "Roarrrrr ! My name is " + Name + ",\n I'm a "+ Age+" years old Lion King";
     }
 
     // Update is called once per frame

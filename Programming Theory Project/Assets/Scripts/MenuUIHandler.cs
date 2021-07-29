@@ -26,13 +26,6 @@ public class MenuUIHandler : MonoBehaviour
         c = cat.GetComponent<Cat>();
         d = dog.GetComponent<Dog>();
         ch = chicken.GetComponent<Chicken>();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void QuitGame()

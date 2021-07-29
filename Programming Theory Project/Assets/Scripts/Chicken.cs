@@ -16,7 +16,7 @@ public class Chicken : Animal
         Age = 2;
         movementSpeed = 1;
         jumpForce = 200;
-        introduceYourselfText = "Chuck Chuck ! My name is " + Name + ", I'm a chicken.\n So I am Little Chicken haha. And I am " + Age + " years old.";
+        IntroduceYourselfText = "Chuck Chuck ! My name is " + Name + ", I'm a chicken.\n So I am Little Chicken haha. And I am " + Age + " years old.";
     }
 
 

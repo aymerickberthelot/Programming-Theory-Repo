@@ -339,3 +339,67 @@ System memory in use after: 118.5 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1614.
 Total: 1.169750 ms (FindLiveObjects: 0.108917 ms CreateObjectMapping: 0.024000 ms MarkObjects: 0.988125 ms  DeleteObjects: 0.047667 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 589.656504 seconds.
+  path: Assets/Scripts/Animal.cs
+  artifactKey: Guid(8bec6fc492ce64727986a5a71432a469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Animal.cs using Guid(8bec6fc492ce64727986a5a71432a469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a48f9efb56ce1081a12f854d280292') in 0.021498 seconds
+  Import took 0.036941 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.518 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1131 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.6 MB.
+System memory in use after: 118.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1617.
+Total: 1.209917 ms (FindLiveObjects: 0.142750 ms CreateObjectMapping: 0.024125 ms MarkObjects: 0.984125 ms  DeleteObjects: 0.057875 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000223 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.454 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1131 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.8 MB.
+System memory in use after: 118.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1620.
+Total: 1.162709 ms (FindLiveObjects: 0.113875 ms CreateObjectMapping: 0.025666 ms MarkObjects: 0.976125 ms  DeleteObjects: 0.046500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 367.937025 seconds.
+  path: Assets/Scripts/Animal.cs
+  artifactKey: Guid(8bec6fc492ce64727986a5a71432a469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Animal.cs using Guid(8bec6fc492ce64727986a5a71432a469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f2ded79f7aa56d14da40f30ee926b6') in 0.004749 seconds
+  Import took 0.006582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005200 seconds.
+  path: Assets/Scripts/Animal.cs
+  artifactKey: Guid(8bec6fc492ce64727986a5a71432a469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Animal.cs using Guid(8bec6fc492ce64727986a5a71432a469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f2ded79f7aa56d14da40f30ee926b6') in 0.001816 seconds
+  Import took 0.003248 seconds .
+
