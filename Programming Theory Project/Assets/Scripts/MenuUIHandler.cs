@@ -66,6 +66,6 @@ public class MenuUIHandler : MonoBehaviour
 
     private void LaunchMain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
